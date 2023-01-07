@@ -1,0 +1,13 @@
+This program simulates the births, deaths, and evolution of organism "cells" over multiple generations based on a static set of rules that can produce
+a variety of successful patterns.
+
+The user has the option of providing a file containing a 20 x 20 board of cells where an X indicates a living cell and a 0 an empty index.
+If the user does not provide a file on the command line, a board is randomly generated.
+
+The user is then propmted for how many generations they would like to simulate evolution for, and the initial board is displayed.
+The program then simulates and displays the specified number of generations.
+
+The program uses a 2 dimensional array for the board and the "cells" are structs containing information such as each cell's age, how
+many neighbors it has, and if the cell is alive or not. By encapsulaing this information in structs, it is a simple matter for the 
+program to keep track of information for each index on the board, and cells' attributes can be manipulated without changing the board state,
+ensuring that the births and deaths of each generation occur simultaneously.
